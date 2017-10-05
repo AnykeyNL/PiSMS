@@ -3,7 +3,7 @@ import os
 import time
 import serial
 
-port="/dev/ttyUSB0"
+port="/dev/ttyUSB0"   # Using adafruit Fona connected thru USB FTDI serial cable with 3.3v logic
 ser = serial.Serial(port,9600,timeout=1)
 
 app = Flask(__name__)
